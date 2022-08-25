@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-25T22:48:58.612Z",
+    "end": "2022-08-25T22:49:07.766Z",
+    "duration": 9154,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0d844911-3ec8-4638-8501-6796d1c6e6a2",
+      "title": "",
+      "fullFile": "cypress/integration/ui/cadastro.spec.js",
+      "file": "cypress/integration/ui/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "375e9f0b-c5fc-4e6d-a56f-b68ab2590ee1",
+          "title": "Realizar cadastro de aula",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastrar nova aula",
+              "fullTitle": "Realizar cadastro de aula Cadastrar nova aula",
+              "timedOut": null,
+              "duration": 5709,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cov_1oh1914a07.f[2]++;\ncov_1oh1914a07.s[8]++;\n// Rotas\ncy.server();\ncov_1oh1914a07.s[9]++;\ncy.route('POST', \"\".concat(Cypress.config().apiUrl, \"/classes\")).as('postClasses'); // Criação do nome completo\nvar fullName = (cov_1oh1914a07.s[10]++, chance.first() + chance.last()); // Array de matérias \nvar subjects = (cov_1oh1914a07.s[11]++, ['Artes', 'Biologia', 'Ciências', 'Educação Física', 'Física', 'Geografia', 'Química', 'História', 'Matemática', 'Português', 'Inglês']); // Construção da(s) hora(s) de inicio e término da aula\nvar fromHour = (cov_1oh1914a07.s[12]++, chance.hour({\n  twentyfour: true\n}));\nvar toHour = (cov_1oh1914a07.s[13]++, '');\ncov_1oh1914a07.s[14]++;\nif (fromHour == 23) {\n  cov_1oh1914a07.b[0][0]++;\n  cov_1oh1914a07.s[15]++;\n  toHour = '00';\n} else {\n  cov_1oh1914a07.b[0][1]++;\n  cov_1oh1914a07.s[16]++;\n  if (fromHour == 24) {\n    cov_1oh1914a07.b[1][0]++;\n    cov_1oh1914a07.s[17]++;\n    fromHour = '00';\n    cov_1oh1914a07.s[18]++;\n    toHour = '01';\n  } else {\n    cov_1oh1914a07.b[1][1]++;\n    cov_1oh1914a07.s[19]++;\n    if (fromHour < 10) {\n      cov_1oh1914a07.b[2][0]++;\n      cov_1oh1914a07.s[20]++;\n      toHour = fromHour + 1;\n      cov_1oh1914a07.s[21]++;\n      fromHour = '0' + fromHour;\n      cov_1oh1914a07.s[22]++;\n      if (fromHour != 9) {\n        cov_1oh1914a07.b[3][0]++;\n        cov_1oh1914a07.s[23]++;\n        toHour = '0' + toHour;\n      } else {\n        cov_1oh1914a07.b[3][1]++;\n      }\n    } else {\n      cov_1oh1914a07.b[2][1]++;\n      cov_1oh1914a07.s[24]++;\n      toHour = fromHour + 1;\n    }\n  }\n} // Construção do(s) minuto(s) da aula\n\nvar min = (cov_1oh1914a07.s[25]++, chance.minute());\ncov_1oh1914a07.s[26]++;\nif (min < 10) {\n  cov_1oh1914a07.b[4][0]++;\n  cov_1oh1914a07.s[27]++;\n  min = '0' + min;\n} else {\n  cov_1oh1914a07.b[4][1]++;\n} // Construção dos horários de inicio e término da aula\n\nvar from = (cov_1oh1914a07.s[28]++, fromHour + ':' + min);\nvar to = (cov_1oh1914a07.s[29]++, toHour + ':' + min); //Preenchimento dos campos\ncov_1oh1914a07.s[30]++;\ncy.get('#name').type(fullName);\ncov_1oh1914a07.s[31]++;\ncy.get('#avatar').type(chance.avatar());\ncov_1oh1914a07.s[32]++;\ncy.get('#whatsapp').type(chance.phone({\n  formatted: false\n}));\ncov_1oh1914a07.s[33]++;\ncy.get('#bio').type(chance.sentence());\ncov_1oh1914a07.s[34]++;\ncy.get('#subject').select(chance.pickone(subjects));\ncov_1oh1914a07.s[35]++;\ncy.get('#cost').type(chance.natural({\n  min: 50,\n  max: 2000\n}));\ncov_1oh1914a07.s[36]++;\ncy.get('#week_day').select(chance.natural({\n  min: 0,\n  max: 6\n}).toString());\ncov_1oh1914a07.s[37]++;\ncy.get('#from').type(from);\ncov_1oh1914a07.s[38]++;\ncy.get('#to').type(to); //Submetendo cadastro\ncov_1oh1914a07.s[39]++;\ncy.get('button[type=submit]').click(); //Validando cadastro com sucesso\ncov_1oh1914a07.s[40]++;\ncy.on('window:alert', function (txt) {\n  cov_1oh1914a07.f[3]++;\n  cov_1oh1914a07.s[41]++;\n  expect(txt).to.eq('Cadastro realizado com sucesso!');\n});\ncov_1oh1914a07.s[42]++;\ncy.wait('@postClasses').then(function (respClasses) {\n  cov_1oh1914a07.f[4]++;\n  cov_1oh1914a07.s[43]++;\n  expect(respClasses.status).to.eq(201);\n});",
+              "err": {},
+              "uuid": "3b90b5ab-c350-424a-8aa9-5a1c264598ac",
+              "parentUUID": "375e9f0b-c5fc-4e6d-a56f-b68ab2590ee1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b90b5ab-c350-424a-8aa9-5a1c264598ac"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5709,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

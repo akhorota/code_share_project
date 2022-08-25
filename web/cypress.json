@@ -1,0 +1,12 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "apiUrl": "http://localhost:3333",
+  "experimentalComponentTesting": true,
+  "componentFolder": "cypress/component",
+  "env": {},
+  "projectId": "tp83ch",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
+}
