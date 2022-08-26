@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-26T01:29:58.986Z",
-    "end": "2022-08-26T01:30:01.740Z",
-    "duration": 2754,
+    "start": "2022-08-26T01:51:12.054Z",
+    "end": "2022-08-26T01:51:14.484Z",
+    "duration": 2430,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e9defcff-74cb-43fe-a386-e99089e22b88",
+      "uuid": "4b15e110-7e61-458e-a488-7f5d7fead597",
       "title": "",
       "fullFile": "cypress/integration/api/connections.spec.js",
       "file": "cypress/integration/api/connections.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "68ee5fb4-7b7b-4517-82bd-16310391a283",
+          "uuid": "62aa54bd-5e56-4b3d-a0e8-8a6d26fd1055",
           "title": "Connections endpoint",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "GET - Obter total de conexões realizadas",
               "fullTitle": "Connections endpoint GET - Obter total de conexões realizadas",
               "timedOut": null,
-              "duration": 111,
+              "duration": 182,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cov_eyhhx4kaj.f[1]++;\ncov_eyhhx4kaj.s[2]++;\n// http://localhost:3333/connections\n// GET\n// 200\ncy.api({\n  method: 'GET',\n  url: \"\".concat(Cypress.config().apiUrl, \"/connections\")\n}).then(function (response) {\n  cov_eyhhx4kaj.f[2]++;\n  cov_eyhhx4kaj.s[3]++;\n  expect(response.status).to.eq(200);\n  cov_eyhhx4kaj.s[4]++;\n  expect(response.duration).lessThan(20);\n  cov_eyhhx4kaj.s[5]++;\n  expect(response.body).to.have.property('total').to.be.a('number').greaterThan(5);\n  cov_eyhhx4kaj.s[6]++;\n  expect(response.body.total).an('number').satisfy(function (totalValue) {\n    cov_eyhhx4kaj.f[3]++;\n    cov_eyhhx4kaj.s[7]++;\n    return totalValue >= 5;\n  });\n  cov_eyhhx4kaj.s[8]++;\n  expect(response.headers).to.have.property('content-type').an('string').equal('application/json; charset=utf-8');\n});",
               "err": {},
-              "uuid": "cf301881-50ec-4f1e-978a-b712cb13cfb7",
-              "parentUUID": "68ee5fb4-7b7b-4517-82bd-16310391a283",
+              "uuid": "37ca2dbd-ea3f-473a-bc89-1ecfa5383f83",
+              "parentUUID": "62aa54bd-5e56-4b3d-a0e8-8a6d26fd1055",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cf301881-50ec-4f1e-978a-b712cb13cfb7"
+            "37ca2dbd-ea3f-473a-bc89-1ecfa5383f83"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 111,
+          "duration": 182,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-26T01:30:09.824Z",
-    "end": "2022-08-26T01:30:18.588Z",
-    "duration": 8764,
+    "start": "2022-08-26T01:51:20.816Z",
+    "end": "2022-08-26T01:51:28.121Z",
+    "duration": 7305,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b1c1b267-cf75-433d-ac03-5591e000956a",
+      "uuid": "cf3ea21b-532e-4ee0-aab1-9e5011b3f047",
       "title": "",
       "fullFile": "cypress/integration/ui/cadastro.spec.js",
       "file": "cypress/integration/ui/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "70a92442-c390-408c-9ac8-1e28bae35d34",
+          "uuid": "a345d77d-86c4-4c4e-bea6-a47627a2093c",
           "title": "Realizar cadastro de aula",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastrar nova aula",
               "fullTitle": "Realizar cadastro de aula Cadastrar nova aula",
               "timedOut": null,
-              "duration": 6094,
+              "duration": 4814,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cov_30z5b9g45.f[2]++;\ncov_30z5b9g45.s[8]++;\n// Rotas\ncy.server();\ncov_30z5b9g45.s[9]++;\ncy.route('POST', \"\".concat(Cypress.config().apiUrl, \"/classes\")).as('postClasses'); // Criação do nome completo\nvar fullName = (cov_30z5b9g45.s[10]++, chance.first() + chance.last()); // Array de matérias \nvar subjects = (cov_30z5b9g45.s[11]++, ['Artes', 'Biologia', 'Ciências', 'Educação Física', 'Física', 'Geografia', 'Química', 'História', 'Matemática', 'Português', 'Inglês']); // Construção da(s) hora(s) de inicio e término da aula\nvar fromHour = (cov_30z5b9g45.s[12]++, chance.hour({\n  twentyfour: true\n}));\nvar toHour = (cov_30z5b9g45.s[13]++, '');\ncov_30z5b9g45.s[14]++;\nif (fromHour == 23) {\n  cov_30z5b9g45.b[0][0]++;\n  cov_30z5b9g45.s[15]++;\n  toHour = '00';\n} else {\n  cov_30z5b9g45.b[0][1]++;\n  cov_30z5b9g45.s[16]++;\n  if (fromHour == 24) {\n    cov_30z5b9g45.b[1][0]++;\n    cov_30z5b9g45.s[17]++;\n    fromHour = '00';\n    cov_30z5b9g45.s[18]++;\n    toHour = '01';\n  } else {\n    cov_30z5b9g45.b[1][1]++;\n    cov_30z5b9g45.s[19]++;\n    if (fromHour < 10) {\n      cov_30z5b9g45.b[2][0]++;\n      cov_30z5b9g45.s[20]++;\n      toHour = fromHour + 1;\n      cov_30z5b9g45.s[21]++;\n      fromHour = '0' + fromHour;\n      cov_30z5b9g45.s[22]++;\n      if (fromHour != 9) {\n        cov_30z5b9g45.b[3][0]++;\n        cov_30z5b9g45.s[23]++;\n        toHour = '0' + toHour;\n      } else {\n        cov_30z5b9g45.b[3][1]++;\n      }\n    } else {\n      cov_30z5b9g45.b[2][1]++;\n      cov_30z5b9g45.s[24]++;\n      toHour = fromHour + 1;\n    }\n  }\n} // Construção do(s) minuto(s) da aula\n\nvar min = (cov_30z5b9g45.s[25]++, chance.minute());\ncov_30z5b9g45.s[26]++;\nif (min < 10) {\n  cov_30z5b9g45.b[4][0]++;\n  cov_30z5b9g45.s[27]++;\n  min = '0' + min;\n} else {\n  cov_30z5b9g45.b[4][1]++;\n} // Construção dos horários de inicio e término da aula\n\nvar from = (cov_30z5b9g45.s[28]++, fromHour + ':' + min);\nvar to = (cov_30z5b9g45.s[29]++, toHour + ':' + min); //Preenchimento dos campos\ncov_30z5b9g45.s[30]++;\ncy.get('#name').type(fullName);\ncov_30z5b9g45.s[31]++;\ncy.get('#avatar').type(chance.avatar());\ncov_30z5b9g45.s[32]++;\ncy.get('#whatsapp').type(chance.phone({\n  formatted: false\n}));\ncov_30z5b9g45.s[33]++;\ncy.get('#bio').type(chance.sentence());\ncov_30z5b9g45.s[34]++;\ncy.get('#subject').select(chance.pickone(subjects));\ncov_30z5b9g45.s[35]++;\ncy.get('#cost').type(chance.natural({\n  min: 50,\n  max: 2000\n}));\ncov_30z5b9g45.s[36]++;\ncy.get('#week_day').select(chance.natural({\n  min: 0,\n  max: 6\n}).toString());\ncov_30z5b9g45.s[37]++;\ncy.get('#from').type(from);\ncov_30z5b9g45.s[38]++;\ncy.get('#to').type(to); //Submetendo cadastro\ncov_30z5b9g45.s[39]++;\ncy.get('button[type=submit]').click(); //Validando cadastro com sucesso\ncov_30z5b9g45.s[40]++;\ncy.on('window:alert', function (txt) {\n  cov_30z5b9g45.f[3]++;\n  cov_30z5b9g45.s[41]++;\n  expect(txt).to.eq('Cadastro realizado com sucesso!');\n});\ncov_30z5b9g45.s[42]++;\ncy.wait('@postClasses').then(function (respClasses) {\n  cov_30z5b9g45.f[4]++;\n  cov_30z5b9g45.s[43]++;\n  expect(respClasses.status).to.eq(201);\n});",
               "err": {},
-              "uuid": "cede95f5-b1cd-414c-966c-861d2a44ed85",
-              "parentUUID": "70a92442-c390-408c-9ac8-1e28bae35d34",
+              "uuid": "1bee4f38-adb8-4f30-ae02-2b2c1a7709f5",
+              "parentUUID": "a345d77d-86c4-4c4e-bea6-a47627a2093c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cede95f5-b1cd-414c-966c-861d2a44ed85"
+            "1bee4f38-adb8-4f30-ae02-2b2c1a7709f5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6094,
+          "duration": 4814,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

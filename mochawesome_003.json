@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-26T01:29:39.252Z",
-    "end": "2022-08-26T01:29:43.480Z",
-    "duration": 4228,
+    "start": "2022-08-26T01:50:56.193Z",
+    "end": "2022-08-26T01:50:59.644Z",
+    "duration": 3451,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d1b23aff-bf4d-44df-9a8c-8fd36aee8d94",
+      "uuid": "8fddf798-b1c0-46c9-8a86-e36e74ad43e5",
       "title": "",
       "fullFile": "cypress/integration/a11y/cy-a11y.spec.js",
       "file": "cypress/integration/a11y/cy-a11y.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7d4b500b-12ce-408b-b0b1-e1024809def3",
+          "uuid": "cad2360c-470c-44eb-ac64-581a6cbdb07b",
           "title": "Accessibility",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should run accessibility audits",
               "fullTitle": "Accessibility should run accessibility audits",
               "timedOut": null,
-              "duration": 1183,
+              "duration": 1148,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cov_12i8syjc7j.f[1]++;\ncov_12i8syjc7j.s[2]++;\ncy.visit('/'); //         cy.injectAxe();\n//         cy.checkA11y();",
               "err": {},
-              "uuid": "6f4dca55-7ccb-423e-aab2-e27cb66048ad",
-              "parentUUID": "7d4b500b-12ce-408b-b0b1-e1024809def3",
+              "uuid": "95c39e21-c154-4809-9bb5-f6dead8c78ed",
+              "parentUUID": "cad2360c-470c-44eb-ac64-581a6cbdb07b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6f4dca55-7ccb-423e-aab2-e27cb66048ad"
+            "95c39e21-c154-4809-9bb5-f6dead8c78ed"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1183,
+          "duration": 1148,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
