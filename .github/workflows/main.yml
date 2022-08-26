@@ -34,9 +34,7 @@ jobs:
 
       # Install web dependencies
       - name: Install web dependencies
-        uses: bahmutov/npm-install@v1
-        with:
-          working-directory: web
+        run: cd web && npm install --legacy-peer-deps
       
       # Run Component & API & UI & Tests
       - name: Run Component & API & UI & Tests
