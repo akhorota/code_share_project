@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-26T14:03:41.107Z",
-    "end": "2022-08-26T14:03:44.734Z",
-    "duration": 3627,
+    "start": "2022-08-26T15:56:29.143Z",
+    "end": "2022-08-26T15:56:32.810Z",
+    "duration": 3667,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e4ad430f-95ba-46e9-990a-36365daee3f2",
+      "uuid": "8da47f8a-4677-4964-8a38-202ccc562f1c",
       "title": "",
       "fullFile": "cypress/integration/ui/landing-global.spec.js",
       "file": "cypress/integration/ui/landing-global.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2ffa76ac-a61f-4ce9-8003-0916e3301076",
+          "uuid": "ef807d47-4df3-4f85-8cef-6c77178d6db3",
           "title": "Landing Page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Navegar para o cadastro de aulas",
               "fullTitle": "Landing Page Navegar para o cadastro de aulas",
               "timedOut": null,
-              "duration": 800,
+              "duration": 826,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cov_vkyyplw0v.f[2]++;\ncov_vkyyplw0v.s[4]++;\ncy.get('div a.give-classes').click();\ncov_vkyyplw0v.s[5]++;\ncy.url().should('contain', 'give-classes');",
               "err": {},
-              "uuid": "217e71da-34f1-4d47-bc1c-450082f86507",
-              "parentUUID": "2ffa76ac-a61f-4ce9-8003-0916e3301076",
+              "uuid": "198df067-2ef5-4f63-9b79-4dcd0e0edc3d",
+              "parentUUID": "ef807d47-4df3-4f85-8cef-6c77178d6db3",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Navegar para pesquisa de professores",
               "fullTitle": "Landing Page Navegar para pesquisa de professores",
               "timedOut": null,
-              "duration": 299,
+              "duration": 291,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cov_vkyyplw0v.f[3]++;\ncov_vkyyplw0v.s[7]++;\ncy.get('div a.study').click();\ncov_vkyyplw0v.s[8]++;\ncy.url().should('contain', 'study');",
               "err": {},
-              "uuid": "69675a30-03e6-4695-bc94-7fb1d2a6d708",
-              "parentUUID": "2ffa76ac-a61f-4ce9-8003-0916e3301076",
+              "uuid": "3c99294e-14c3-4a44-a884-dd2f26049373",
+              "parentUUID": "ef807d47-4df3-4f85-8cef-6c77178d6db3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "217e71da-34f1-4d47-bc1c-450082f86507",
-            "69675a30-03e6-4695-bc94-7fb1d2a6d708"
+            "198df067-2ef5-4f63-9b79-4dcd0e0edc3d",
+            "3c99294e-14c3-4a44-a884-dd2f26049373"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1099,
+          "duration": 1117,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

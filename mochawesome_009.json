@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-26T14:03:50.352Z",
-    "end": "2022-08-26T14:03:54.694Z",
-    "duration": 4342,
+    "start": "2022-08-26T15:56:38.060Z",
+    "end": "2022-08-26T15:56:42.308Z",
+    "duration": 4248,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e5a0844d-f9b3-42f5-9a09-5263c69d859a",
+      "uuid": "cd8a37a1-9778-4af2-91a5-7cf35870f77c",
       "title": "",
       "fullFile": "cypress/integration/ui/landing.spec.js",
       "file": "cypress/integration/ui/landing.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9c7fa9ad-0943-41b3-9688-5d272173f50e",
+          "uuid": "3ec5e253-702a-4c4c-a07d-64d2758a4f46",
           "title": "Landing Page - 1200px",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Navegar para o cadastro de aulas",
               "fullTitle": "Landing Page - 1200px Navegar para o cadastro de aulas",
               "timedOut": null,
-              "duration": 815,
+              "duration": 774,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cov_1j4216ryy2.f[3]++;\ncov_1j4216ryy2.s[8]++;\ncy.get('div a.give-classes').click();\ncov_1j4216ryy2.s[9]++;\ncy.url().should('contain', 'give-classes');",
               "err": {},
-              "uuid": "2cc68f97-ed0c-4bac-91ca-9384d907aadf",
-              "parentUUID": "9c7fa9ad-0943-41b3-9688-5d272173f50e",
+              "uuid": "8f1f762b-f3b1-4c8e-a54e-52f635cba6d3",
+              "parentUUID": "3ec5e253-702a-4c4c-a07d-64d2758a4f46",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Navegar para pesquisa de professores",
               "fullTitle": "Landing Page - 1200px Navegar para pesquisa de professores",
               "timedOut": null,
-              "duration": 326,
+              "duration": 321,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,27 +65,27 @@
               "context": null,
               "code": "cov_1j4216ryy2.f[4]++;\ncov_1j4216ryy2.s[11]++;\ncy.get('div a.study').click();\ncov_1j4216ryy2.s[12]++;\ncy.url().should('contain', 'study');",
               "err": {},
-              "uuid": "afe6ebff-2ad2-4f5d-af52-6719992be001",
-              "parentUUID": "9c7fa9ad-0943-41b3-9688-5d272173f50e",
+              "uuid": "a13f95a3-399f-43ad-bad2-139cb64cbd12",
+              "parentUUID": "3ec5e253-702a-4c4c-a07d-64d2758a4f46",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2cc68f97-ed0c-4bac-91ca-9384d907aadf",
-            "afe6ebff-2ad2-4f5d-af52-6719992be001"
+            "8f1f762b-f3b1-4c8e-a54e-52f635cba6d3",
+            "a13f95a3-399f-43ad-bad2-139cb64cbd12"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1141,
+          "duration": 1095,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "4acbbe56-9c73-41c0-9ca6-c4586c57a910",
+          "uuid": "8bf6aea5-0174-41b1-9c62-a3a6adfd7bba",
           "title": "Landing Page - 1090px",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "Navegar para o cadastro de aulas",
               "fullTitle": "Landing Page - 1090px Navegar para o cadastro de aulas",
               "timedOut": null,
-              "duration": 314,
+              "duration": 308,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,8 +105,8 @@
               "context": null,
               "code": "cov_1j4216ryy2.f[3]++;\ncov_1j4216ryy2.s[8]++;\ncy.get('div a.give-classes').click();\ncov_1j4216ryy2.s[9]++;\ncy.url().should('contain', 'give-classes');",
               "err": {},
-              "uuid": "cc279963-7474-489b-9a2f-392f2e795dae",
-              "parentUUID": "4acbbe56-9c73-41c0-9ca6-c4586c57a910",
+              "uuid": "3585e654-b605-434b-abe6-e101d99975e2",
+              "parentUUID": "8bf6aea5-0174-41b1-9c62-a3a6adfd7bba",
               "isHook": false,
               "skipped": false
             },
@@ -114,7 +114,7 @@
               "title": "Navegar para pesquisa de professores",
               "fullTitle": "Landing Page - 1090px Navegar para pesquisa de professores",
               "timedOut": null,
-              "duration": 288,
+              "duration": 287,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -123,21 +123,21 @@
               "context": null,
               "code": "cov_1j4216ryy2.f[4]++;\ncov_1j4216ryy2.s[11]++;\ncy.get('div a.study').click();\ncov_1j4216ryy2.s[12]++;\ncy.url().should('contain', 'study');",
               "err": {},
-              "uuid": "e0477873-68ec-4253-83d1-26303c0b4f79",
-              "parentUUID": "4acbbe56-9c73-41c0-9ca6-c4586c57a910",
+              "uuid": "c03d5c53-234a-4fe1-810d-8fd950e217d2",
+              "parentUUID": "8bf6aea5-0174-41b1-9c62-a3a6adfd7bba",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cc279963-7474-489b-9a2f-392f2e795dae",
-            "e0477873-68ec-4253-83d1-26303c0b4f79"
+            "3585e654-b605-434b-abe6-e101d99975e2",
+            "c03d5c53-234a-4fe1-810d-8fd950e217d2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 602,
+          "duration": 595,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
