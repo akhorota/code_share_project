@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-26T01:18:56.333Z",
+    "end": "2022-08-26T01:18:58.870Z",
+    "duration": 2537,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "31f71a67-c325-4219-bb04-71d9781328da",
+      "title": "",
+      "fullFile": "cypress/integration/api/connections.spec.js",
+      "file": "cypress/integration/api/connections.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5f50e676-a82f-4568-9462-3bcdbdaba00f",
+          "title": "Connections endpoint",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Obter total de conexões realizadas",
+              "fullTitle": "Connections endpoint GET - Obter total de conexões realizadas",
+              "timedOut": null,
+              "duration": 365,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cov_eyhhx4kaj.f[1]++;\ncov_eyhhx4kaj.s[2]++;\n// http://localhost:3333/connections\n// GET\n// 200\ncy.api({\n  method: 'GET',\n  url: \"\".concat(Cypress.config().apiUrl, \"/connections\")\n}).then(function (response) {\n  cov_eyhhx4kaj.f[2]++;\n  cov_eyhhx4kaj.s[3]++;\n  expect(response.status).to.eq(200);\n  cov_eyhhx4kaj.s[4]++;\n  expect(response.duration).lessThan(20);\n  cov_eyhhx4kaj.s[5]++;\n  expect(response.body).to.have.property('total').to.be.a('number').greaterThan(5);\n  cov_eyhhx4kaj.s[6]++;\n  expect(response.body.total).an('number').satisfy(function (totalValue) {\n    cov_eyhhx4kaj.f[3]++;\n    cov_eyhhx4kaj.s[7]++;\n    return totalValue >= 5;\n  });\n  cov_eyhhx4kaj.s[8]++;\n  expect(response.headers).to.have.property('content-type').an('string').equal('application/json; charset=utf-8');\n});",
+              "err": {},
+              "uuid": "a50e5335-b010-4776-aa6e-12ccee4f8d8b",
+              "parentUUID": "5f50e676-a82f-4568-9462-3bcdbdaba00f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a50e5335-b010-4776-aa6e-12ccee4f8d8b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 365,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

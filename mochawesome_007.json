@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-26T01:19:17.359Z",
+    "end": "2022-08-26T01:19:20.310Z",
+    "duration": 2951,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f5e01bff-5e79-4bbd-8d45-3a3cd0d5c901",
+      "title": "",
+      "fullFile": "cypress/integration/ui/landing-global.spec.js",
+      "file": "cypress/integration/ui/landing-global.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "08b05087-7a48-44e8-96a6-a01458b835d5",
+          "title": "Landing Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navegar para o cadastro de aulas",
+              "fullTitle": "Landing Page Navegar para o cadastro de aulas",
+              "timedOut": null,
+              "duration": 645,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cov_vkyyplw0v.f[2]++;\ncov_vkyyplw0v.s[4]++;\ncy.get('div a.give-classes').click();\ncov_vkyyplw0v.s[5]++;\ncy.url().should('contain', 'give-classes');",
+              "err": {},
+              "uuid": "545c0538-995b-41dc-ae76-20390354b9e8",
+              "parentUUID": "08b05087-7a48-44e8-96a6-a01458b835d5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Navegar para pesquisa de professores",
+              "fullTitle": "Landing Page Navegar para pesquisa de professores",
+              "timedOut": null,
+              "duration": 259,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cov_vkyyplw0v.f[3]++;\ncov_vkyyplw0v.s[7]++;\ncy.get('div a.study').click();\ncov_vkyyplw0v.s[8]++;\ncy.url().should('contain', 'study');",
+              "err": {},
+              "uuid": "1cb646bf-2921-499d-a990-42de76c11f29",
+              "parentUUID": "08b05087-7a48-44e8-96a6-a01458b835d5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "545c0538-995b-41dc-ae76-20390354b9e8",
+            "1cb646bf-2921-499d-a990-42de76c11f29"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 904,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-26T01:19:47.051Z",
+    "end": "2022-08-26T01:19:49.294Z",
+    "duration": 2243,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "07618bdd-746a-401a-8229-b52a90adb9de",
+      "title": "",
+      "fullFile": "cypress/component/Textarea.spec.js",
+      "file": "cypress/component/Textarea.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "838b10a1-d2e2-4981-9819-8496899941cd",
+          "title": "Textarea component from TeacherForm",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve ser renderizado com sucesso",
+              "fullTitle": "Textarea component from TeacherForm Deve ser renderizado com sucesso",
+              "timedOut": null,
+              "duration": 180,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cov_jwaw2npu0.f[1]++;\ncov_jwaw2npu0.s[6]++;\n//Montando o componente\n(0, _cypressReactUnitTest.mount)( /*#__PURE__*/_react[\"default\"].createElement(_reactRouterDom.BrowserRouter, {\n  __self: _this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 19,\n    columnNumber: 13\n  }\n}, /*#__PURE__*/_react[\"default\"].createElement(_Textarea[\"default\"], {\n  name: name,\n  label: label,\n  __self: _this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 20,\n    columnNumber: 17\n  }\n})), {\n  stylesheets: [baseCss, indexCss] //Aplicando o CSS do componente\n}); //Preparação\ncov_jwaw2npu0.s[7]++;\ncy.get('.textarea-block').as('textareablock');\ncov_jwaw2npu0.s[8]++;\ncy.get('@textareablock').find('label').as('label');\ncov_jwaw2npu0.s[9]++;\ncy.get('@textareablock').find('textarea').as('textarea'); //Validações\ncov_jwaw2npu0.s[10]++;\ncy.get('@textarea').should('exist');\ncov_jwaw2npu0.s[11]++;\ncy.get('@label').should('have.text', label);",
+              "err": {},
+              "uuid": "f92f5bdb-8b2a-414d-bf79-27427a136752",
+              "parentUUID": "838b10a1-d2e2-4981-9819-8496899941cd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f92f5bdb-8b2a-414d-bf79-27427a136752"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 180,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
