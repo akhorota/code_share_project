@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-26T01:18:49.986Z",
-    "end": "2022-08-26T01:18:52.149Z",
-    "duration": 2163,
+    "start": "2022-08-26T01:24:37.163Z",
+    "end": "2022-08-26T01:24:39.396Z",
+    "duration": 2233,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d2675762-8a6a-4cb0-8aa8-3b1827e138f1",
+      "uuid": "5fd3ec82-5073-4acd-a758-ede80ae95b7e",
       "title": "",
       "fullFile": "cypress/integration/api/classes.spec.js",
       "file": "cypress/integration/api/classes.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dbbe5399-69ce-48fb-b718-2f71e878de13",
+          "uuid": "2fe77b53-7f7b-44db-bdf3-e0bbb73d65ea",
           "title": "Classes endpoint",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "POST - Cadastrar um novo professor",
               "fullTitle": "Classes endpoint POST - Cadastrar um novo professor",
               "timedOut": null,
-              "duration": 190,
+              "duration": 212,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cov_254sbg06ds.f[1]++;\nvar from = (cov_254sbg06ds.s[2]++, 8);\nvar to = (cov_254sbg06ds.s[3]++, 9);\ncov_254sbg06ds.s[4]++;\ncy.api({\n  method: 'POST',\n  url: \"\".concat(Cypress.config().apiUrl, \"/classes\"),\n  body: {\n    \"name\": \"reports\",\n    \"avatar\": \"https://pickaface.net/gallery/avatar/unr_fake_190524_1549_9fgji7.png\",\n    \"whatsapp\": \"73999999999\",\n    \"bio\": \"zdzxdsdas\",\n    \"subject\": \"Educação Física\",\n    \"cost\": 1000,\n    \"schedule\": [{\n      \"week_day\": 0,\n      \"from\": \"0\".concat(from, \":00\"),\n      \"to\": \"0\".concat(to, \":00\")\n    }]\n  }\n}).then(function (response) {\n  cov_254sbg06ds.f[2]++;\n  cov_254sbg06ds.s[5]++;\n  expect(response.status).to.eq(201);\n  cov_254sbg06ds.s[6]++;\n  expect(response.duration).lessThan(50);\n  cov_254sbg06ds.s[7]++;\n  expect(response.body[0]).to.have.property('class_id').an('number').greaterThan(0);\n  cov_254sbg06ds.s[8]++;\n  expect(response.body[0]).to.have.property('week_day').an('number').equal(0);\n  cov_254sbg06ds.s[9]++;\n  expect(response.body[0]).to.have.property('from').an('number').equal(\"\".concat(from) * 60);\n  cov_254sbg06ds.s[10]++;\n  expect(response.body[0]).to.have.property('to').an('number').equal(\"\".concat(to) * 60);\n});",
               "err": {},
-              "uuid": "f61544f8-4186-4467-b891-11434778a913",
-              "parentUUID": "dbbe5399-69ce-48fb-b718-2f71e878de13",
+              "uuid": "78b1f494-5cf0-4fb9-98f2-4da87aa27106",
+              "parentUUID": "2fe77b53-7f7b-44db-bdf3-e0bbb73d65ea",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f61544f8-4186-4467-b891-11434778a913"
+            "78b1f494-5cf0-4fb9-98f2-4da87aa27106"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 190,
+          "duration": 212,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
