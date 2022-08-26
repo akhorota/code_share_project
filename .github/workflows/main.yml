@@ -44,6 +44,7 @@ jobs:
           install: false
           start: npm run start:ci
           wait-on: 'http://localhost:3000'
+          command: --spec 'cypress/integration/ui/**'
           
       # Upload screenshots
       - name: Upload screenshots
