@@ -28,13 +28,13 @@ jobs:
 
       # Install server dependencies
       - name: Install server dependencies
-        uses: bahmutov/npm-install@v1.6.0
+        uses: bahmutov/npm-install@v1
         with:
           working-directory: server
 
       # Install web dependencies
       - name: Install web dependencies
-        uses: bahmutov/npm-install@v1.6.0
+        uses: bahmutov/npm-install@v1
         with:
           working-directory: web
       
