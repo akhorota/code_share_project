@@ -37,7 +37,7 @@ jobs:
         run: cd web && npm install --legacy-peer-deps
       
       # Run Component Tests
-      - name: Run UI Tests
+      - name: Run Component Tests
         uses: cypress-io/github-action@v4.2.0
         with:
           working-directory: web
@@ -47,7 +47,7 @@ jobs:
           command: npm run test:component
       
       # Run API Tests
-      - name: Run UI Tests
+      - name: Run API Tests
         uses: cypress-io/github-action@v4.2.0
         with:
           working-directory: web
