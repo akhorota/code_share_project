@@ -45,17 +45,35 @@ jobs:
           start: npm run start:ci
           wait-on: 'http://localhost:3000'
           
+      # Upload screenshots
       - name: Upload screenshots
         uses: actions/upload-artifact@v2.2.4
         if: failure()
         with:
           name: screenshots
           path: web/cypress/screenshots
-          
+     
+      # Upload videos
       - name: Upload videos
         uses: actions/upload-artifact@v2.2.4
         if: always()
         with:
           name: videos
           path: web/cypress/videos
+          
+      # Merge mochawesome report
+      - name: Merge mochawesome reports
+        run: npm run report:merge
       
+      # Generate mochawesome report
+      - name: Generate mochawesome reports
+        run: npm run report:mocha
+      
+      # Publish to GitHub Pages
+      - name: Publish to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.1
+        with:
+          token: ${{ github.token }}
+          branch: gh-pages
+          folder: mochawesome-report
+
