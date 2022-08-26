@@ -34,8 +34,8 @@
     "test:ui": "npx cypress run --spec 'cypress/integration/ui/**'",
     "test:api": "npx cypress run --spec 'cypress/integration/api/**'",
     "test:component": "npx cypress run --spec 'cypress/component/**'",
-    "report:merge": "mochawesome-merge > full_report.json",
-    "report:mocha": "marge full_report.json"
+    "report:merge": "mochawesome-merge > index.json",
+    "report:mocha": "marge index.json"
   },
   "eslintConfig": {
     "extends": "react-app"
