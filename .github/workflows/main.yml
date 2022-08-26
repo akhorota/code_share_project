@@ -86,8 +86,8 @@ jobs:
       - name: Generate mochawesome reports
         run: cd web && npm run report:mocha
       
-      # Publish to GitHub Pages
-      - name: Publish to GitHub Pages
+      # Publish report to GitHub Pages
+      - name: Publish report to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.1
         with:
           token: ${{ github.token }}
