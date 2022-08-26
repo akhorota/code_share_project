@@ -63,11 +63,11 @@ jobs:
           
       # Merge mochawesome report
       - name: Merge mochawesome reports
-        run: npm run report:merge
+        run: cd web && npm run report:merge
       
       # Generate mochawesome report
       - name: Generate mochawesome reports
-        run: npm run report:mocha
+        run: cd web && npm run report:mocha
       
       # Publish to GitHub Pages
       - name: Publish to GitHub Pages
