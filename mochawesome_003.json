@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-26T15:55:07.738Z",
-    "end": "2022-08-26T15:55:10.661Z",
-    "duration": 2923,
+    "start": "2022-08-26T17:21:35.940Z",
+    "end": "2022-08-26T17:21:38.357Z",
+    "duration": 2417,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7cca95b7-1b76-4d9f-8cff-4f7d357e8917",
+      "uuid": "26cf01a9-14aa-4e7e-9400-ee75f899440d",
       "title": "",
       "fullFile": "cypress/component/PageHeader.spec.js",
       "file": "cypress/component/PageHeader.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cd36eb80-00a8-46db-8fc4-28e5dd52445e",
+          "uuid": "b8665fde-366b-43d3-ae62-1ebe85eaeb41",
           "title": "PageHeader component",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve ser renderizado com sucesso",
               "fullTitle": "PageHeader component Deve ser renderizado com sucesso",
               "timedOut": null,
-              "duration": 262,
+              "duration": 228,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cov_28m9yb80nl.f[1]++;\ncov_28m9yb80nl.s[6]++;\n(0, _cypressReactUnitTest.mount)( /*#__PURE__*/_react[\"default\"].createElement(_reactRouterDom.BrowserRouter, {\n  __self: _this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 17,\n    columnNumber: 13\n  }\n}, /*#__PURE__*/_react[\"default\"].createElement(_PageHeader[\"default\"], {\n  title: title,\n  description: description,\n  __self: _this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 18,\n    columnNumber: 17\n  }\n})), {\n  stylesheets: [baseCss, indexCss]\n});\ncov_28m9yb80nl.s[7]++;\ncy.get('.page-header').as('header');\ncov_28m9yb80nl.s[8]++;\ncy.get('@header').find('strong').as('title');\ncov_28m9yb80nl.s[9]++;\ncy.get('@header').find('p').as('description');\ncov_28m9yb80nl.s[10]++;\ncy.get('@title').should('have.text', title);\ncov_28m9yb80nl.s[11]++;\ncy.get('@description').should('have.text', description);\ncov_28m9yb80nl.s[12]++;\ncy.get('@header').then(function ($elemento) {\n  cov_28m9yb80nl.f[2]++;\n  cov_28m9yb80nl.s[13]++;\n  expect($elemento.css('background-color')).to.be.equal('rgb(130, 87, 229)');\n  cov_28m9yb80nl.s[14]++;\n  expect($elemento.css('flex-direction')).to.be.equal('column');\n});",
               "err": {},
-              "uuid": "08a3fc83-706c-4dc5-83ef-b23b3c2d9d35",
-              "parentUUID": "cd36eb80-00a8-46db-8fc4-28e5dd52445e",
+              "uuid": "7a3a32cd-6470-4d20-bebc-0e6cdbacc991",
+              "parentUUID": "b8665fde-366b-43d3-ae62-1ebe85eaeb41",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "08a3fc83-706c-4dc5-83ef-b23b3c2d9d35"
+            "7a3a32cd-6470-4d20-bebc-0e6cdbacc991"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 262,
+          "duration": 228,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-26T15:55:22.443Z",
-    "end": "2022-08-26T15:55:25.311Z",
-    "duration": 2868,
+    "start": "2022-08-26T17:21:47.546Z",
+    "end": "2022-08-26T17:21:49.777Z",
+    "duration": 2231,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "606d3a54-a983-42fa-b45f-e971d9ab4100",
+      "uuid": "baa05f0b-79c9-4148-87c7-6e116d5fe918",
       "title": "",
       "fullFile": "cypress/component/Textarea.spec.js",
       "file": "cypress/component/Textarea.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4ea651f8-0cb0-4821-b0bd-b036fdc3e688",
+          "uuid": "5c2744e4-49d2-49a5-9e61-981f25206b82",
           "title": "Textarea component from TeacherForm",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve ser renderizado com sucesso",
               "fullTitle": "Textarea component from TeacherForm Deve ser renderizado com sucesso",
               "timedOut": null,
-              "duration": 246,
+              "duration": 195,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cov_jwaw2npu0.f[1]++;\ncov_jwaw2npu0.s[6]++;\n//Montando o componente\n(0, _cypressReactUnitTest.mount)( /*#__PURE__*/_react[\"default\"].createElement(_reactRouterDom.BrowserRouter, {\n  __self: _this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 19,\n    columnNumber: 13\n  }\n}, /*#__PURE__*/_react[\"default\"].createElement(_Textarea[\"default\"], {\n  name: name,\n  label: label,\n  __self: _this,\n  __source: {\n    fileName: _jsxFileName,\n    lineNumber: 20,\n    columnNumber: 17\n  }\n})), {\n  stylesheets: [baseCss, indexCss] //Aplicando o CSS do componente\n}); //Preparação\ncov_jwaw2npu0.s[7]++;\ncy.get('.textarea-block').as('textareablock');\ncov_jwaw2npu0.s[8]++;\ncy.get('@textareablock').find('label').as('label');\ncov_jwaw2npu0.s[9]++;\ncy.get('@textareablock').find('textarea').as('textarea'); //Validações\ncov_jwaw2npu0.s[10]++;\ncy.get('@textarea').should('exist');\ncov_jwaw2npu0.s[11]++;\ncy.get('@label').should('have.text', label);",
               "err": {},
-              "uuid": "dfeba40e-6973-4365-a1b3-74f09e119d5f",
-              "parentUUID": "4ea651f8-0cb0-4821-b0bd-b036fdc3e688",
+              "uuid": "fe89bc32-e619-49a3-ab3c-1f8fc421f03f",
+              "parentUUID": "5c2744e4-49d2-49a5-9e61-981f25206b82",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dfeba40e-6973-4365-a1b3-74f09e119d5f"
+            "fe89bc32-e619-49a3-ab3c-1f8fc421f03f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 246,
+          "duration": 195,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
