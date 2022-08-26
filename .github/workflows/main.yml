@@ -36,7 +36,7 @@ jobs:
       - name: Install web dependencies
         run: cd web && npm install --legacy-peer-deps
       
-      # Run UI Tests
+      # Run Component Tests
       - name: Run UI Tests
         uses: cypress-io/github-action@v4.2.0
         with:
@@ -44,6 +44,22 @@ jobs:
           install: false
           start: npm run start:ci
           wait-on: 'http://localhost:3000'
+          command: npm run test:component
+      
+      # Run API Tests
+      - name: Run UI Tests
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          working-directory: web
+          install: false
+          command: npm run test:api
+          
+      # Run UI Tests
+      - name: Run UI Tests
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          working-directory: web
+          install: false
           command: npm run test:ui
           
       # Upload screenshots
